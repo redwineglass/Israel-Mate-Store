@@ -1,54 +1,101 @@
-/* deals section */
-#deals-carousel {
-  text-align: center;
+body{
+    font-family: 'rubik';
+  }p {
+  font-family: 'rubik';
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+img{
+  max-width:100%;
+  max-height:100%;
 }
 
-.deal-image {
-  width: 50%;
-  height: auto;
+/* background images */
+.bg-leaf {
+  background-image:url("../images/1_gard.jpg");
 }
 
-.product-image{
-  height: 20rem;
-  width: auto;
+/* containers */
+.container-fluid {
+  padding: 2% 15%;
 }
-.box{
-  height: auto;
+
+.top-container {
+  padding-bottom: 18%;
+}
+
+/* navbars */
+.logo {
+  width: 10rem;
+  height: 10rem;
+}
+
+.navbar {
+  font-size: 1.7rem;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-family: 'rubik';
+}
+
+.nav-item {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* title */
+.title {
   text-align: center;
-  border: 1rem solid green;
+  color: white;
+}
+
+.header {
+  font-family: 'Karla';
+  padding-top: 7rem;
+  font-size: 5rem;
+}
+
+/* animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 4s;
+}
+
+.fade-in-later {
+  animation: fadeIn 7s;
+}
+
+/* benefits section */
+
+.benefits{
+  text-align: center;
 }
 
 .row{
-  text-align: center;
+  padding: 10% 0;
 }
+.green-icon{
+  color: #445c3c;
+  font-size: 4rem;
+  padding-bottom: 5%;
+}
+
+/* products section */
 .products{
   padding: 7% 15%;
   background-color: #d6d899;
 }
-.col{
-  width: 50%;
-  padding: 0 17%;
-}
-.card{
-  border-radius: 10%;
-  margin: 0 auto; /* stackoverflow */
-  width: 32rem;
-  height: 43rem;
-  text-align: center;
-}
-.card-img-top{
-  border-radius: 10%;
-}
-.btn-xlarge {  /* stackoverflow */
-    padding: 18px 28px;
-    font-size: 22px;
-    line-height: normal;
-    -webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-            border-radius: 8px;
-}
 
-/* Copy from */
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,15 +108,7 @@
   align-items: center;
 }
 
-.flex-centerY-centerX {
-  justify-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
+
 
 .page-wrapper {
   height: 100%;
@@ -82,21 +121,21 @@
 }
 
 .el-wrapper {
-  width: 360px;
+  width: 450px;
   padding: 15px;
   margin: 15px auto;
   background-color: #fff;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1920px) {
   .el-wrapper {
-    width: 345px;
+    width: 445px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1320px) {
   .el-wrapper {
-    width: 290px;
+    width: 345px;
     margin: 30px auto;
   }
 }
@@ -181,7 +220,7 @@
   /* ease-out */
   width: 660px;
   height: 100%;
-  background-color: #3f96cd;
+  background-color: #a7e9af;
   position: absolute;
   left: -659px;
 }
@@ -241,8 +280,6 @@
   color: #828282;
   opacity: 0;
 }
-
-
 
 .cart {
   display: block;
@@ -305,10 +342,23 @@
 }
 
 .cart .add-to-cart .txt {
-  font-size: 12px;
+  font-family: rubik;
+  font-size: 16px;
   color: #fff;
   letter-spacing: 0.045em;
   text-transform: uppercase;
   white-space: nowrap;
 }
-/* End copy */
+.footer{
+  padding-left: 8% 0;
+  text-align: center;
+  background-color: white;
+}
+.footer i{
+  font-size: 1.2rem;
+  padding: 1.5rem 0.6rem ;
+}
+.footer p{
+  font-size: 13px;
+  color: grey;
+}
